@@ -11,18 +11,18 @@ The file `DataFile.hs` will contain these documents. The code uses the list `doc
 order to learn.
 
 ## The functions implemented
-1. wordToken
-  Splits the text so that each word/punctuation is a separate item in the list. The list of
+### wordToken
+Splits the text so that each word/punctuation is a separate item in the list. The list of
 punctuations is in the `DataFile.hs`.
-  - Example:
-  ```
+- Example:
+```
   > wordToken "the sun is shining. the wind is blowing"
 ["the","sun","is","shining",".","the","wind","is","blowing"]
 ```
-2. wordTokenList
-  Given a list of texts, it generates all tokens (separated words/punctuation).
-  - Example:
-  ```
+### wordTokenList
+Given a list of texts, it generates all tokens (separated words/punctuation).
+- Example:
+```
   > wordTokenList ["the man is the man. he is great","the man saw the saw"]
 ["the","man","is","the","man",".","he","is","great","the","man","saw","the","saw"]
 ```
