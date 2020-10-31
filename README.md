@@ -1,4 +1,4 @@
-# Word Generator System
+# Automatic Text Generation System
 
 ## Project describtion
 This project is an implementation of a simple algorithmic automatic text generator. It should be able to learn some statistics from a number of given documents **(from DataFile.hs)** and then use these statistics to generate text.
@@ -120,7 +120,7 @@ the statistics mentioned above and return the whole text including the two words
 ```
 
 ## Note
-> there are two docs lists in the DataFile.hs, a shorter one for testing and the longer
-one (commented) to try the whole project on at the end. The longer one is a preprocessed one from [this link.](https://simple.wikipedia.org/)
+> there are two docs lists in the `DataFile.hs`, a shorter one for testing and the longer
+one *(commented)* to try the whole project on at the end. The longer one is a preprocessed one from [this link.](https://simple.wikipedia.org/)
 
 
