@@ -110,16 +110,3 @@ generateText string n = helper (wordToken string) generateNewDoc n
                             helper (x:y) list n
                                           | n > 0 = x ++ " " ++ helper (y ++ [(generateNextWord (x:y) (list))]) (list) (n-1)
                                           | otherwise = x ++ concat (" ":y)
-
-------------------------------------------- Evaluation code -------------------------------------
-
-sentToken:: String -> [String]
-
-sentToken "" = []
-sentToken string = helper string ""
-                    where helper "" ""      = []
-                          helper "" current = [current]
-                          helper (x:xs) current
-                                | elem x ['.','!','?'] && current == "" = helper xs ""
-                                | elem x ['.','!','?']           = (current ++ [x]): helper xs ""
-                                | otherwise            = helper xs (current ++ [x])
