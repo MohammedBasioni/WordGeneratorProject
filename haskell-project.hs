@@ -1,5 +1,7 @@
 import DataFile
 
+
+
 wordToken :: String -> [String]
 wordToken "" = []
 wordToken string = helper string ""
@@ -69,7 +71,7 @@ getFreq a ((x,y):z)
   | (a == x) = y
   | otherwise = getFreq a z
 
-generateOneProb :: Fractional a => ((String,String,String),a) -> [((String,String),a)] -> a
+generateOneProb :: Fractional a => ((String,String,String),a) -> [((String,String),a)]  -> a
 
 
 generateOneProb _ [] = 0
